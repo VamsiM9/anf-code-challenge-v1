@@ -1,0 +1,15 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+      data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-use.newsListModel="com.anf.core.models.NewsFeedModel" />
+<ul data-sly-list="${newsListModel.newsList}">
+
+<li>
+	Title : ${item.title}<br>
+	Author : ${item.author}<br>
+	Description : ${item.description @ context='html'}<br>
+	Image : <img src="${item.urlImage}"/><br>
+	Date : ${newsListModel.date}<br>
+
+</li>
+
+</ul>
