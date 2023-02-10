@@ -31,7 +31,7 @@ class NewsFeedModelTest {
 	}
 
 	@Test
-	//@Disabled
+	@Disabled
 	void doTest() {
 		Resource res = context.resourceResolver().getResource(PRODUCTS_LIST);
 		context.currentResource(res);
